@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nuestra Boda | Amanda & Adrián</title>
+
+    <meta name="description"
+        content="Invitación digital a la boda de Amanda Lazcano Martínez y Adrián Salvador Ramos Rodríguez.">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,400;0,0,500;0,500;0,600;0,600;1,400;1,500;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+     AUDIO
+===================================================== -->
+
+    <audio id="musica" loop>
+        <source src="audio/musica.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- =====================================================
+     PORTADA
+===================================================== -->
+
+    <header class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="ornamento-corner esquina-superior">❦</div>
+        <div class="ornamento-corner esquina-inferior">❧</div>
+
+        <div class="hero-contenido">
+
+            <p class="mini-titulo">
+                CON GRAN ALEGRÍA
+            </p>
+
+            <h2 class="hero-titulo">
+                Nuestra Boda
+            </h2>
+
+            <div class="linea-ornamental">
+                <span>✦</span>
+            </div>
+
+            <!-- FOTO -->
+            <div class="marco-foto">
+
+                <div class="marco-interno">
+
+                    <img src="img/novios.jpeg" alt="Amanda y Adrián" class="foto-portada">
+
+                </div>
+
+            </div>
+
+            <!-- NOMBRES -->
+
+            <h1 class="nombre">
+                Amanda
+                <span>Lazcano Martínez</span>
+            </h1>
+
+            <div class="ampersand">&</div>
+
+            <h1 class="nombre">
+                Adrián
+                <span>Salvador Ramos Rodríguez</span>
+            </h1>
+
+            <!-- FECHA -->
+
+            <div class="fecha-portada">
+
+                <span>28</span>
+
+                <div>
+                    <strong>NOVIEMBRE</strong>
+                    <small>2026</small>
+                </div>
+
+            </div>
+
+            <p class="frase-portada">
+                “El amor nos unió y queremos compartir
+                este día tan especial contigo.”
+            </p>
+
+            <div class="botones-hero">
+
+                <button id="btnAbrir" class="btn btn-principal">
+                    <i class="fa-regular fa-envelope"></i>
+                    Abrir invitación
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+     CONTENIDO
+===================================================== -->
+
+    <main id="contenido" class="oculto">
+
+
+        <!-- =====================================================
+     NUESTRA CANCIÓN
+===================================================== -->
+
+        <section class="cancion seccion">
+
+            <div class="cancion-decoracion">
+                ♫
+            </div>
+
+            <p class="subtitulo">
+                UN PEDACITO DE NUESTRA HISTORIA
+            </p>
+
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <div class="reproductor">
+
+                <div class="portada-musica">
+
+                    <div class="portada-marco">
+
+                        <img src="img/portada-cancion.jpeg" alt="Nuestra canción" onerror="this.src='img/novios.jpeg'">
+
+                    </div>
+
+                    <div class="brillo-portada"></div>
+
+                </div>
+
+                <div class="info-cancion">
+
+                
+                    <h3>
+                        Porque algunas canciones guardan
+                        momentos, personas y recuerdos que
+                        queremos llevar siempre con nosotros.
+                    </h3>
+
+
+                </div>
+
+                <div class="barra-musica">
+
+                    <span id="tiempoActual">
+                        0:00
+                    </span>
+
+                    <div class="progreso-contenedor" id="progresoContenedor">
+
+                        <div class="progreso" id="progreso"></div>
+
+                    </div>
+
+                    <span id="duracionMusica">
+                        0:00
+                    </span>
+
+                </div>
+
+                <div class="controles-musica">
+
+                    <button class="boton-play" id="btnMusica" aria-label="Reproducir canción">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     BIENVENIDA
+===================================================== -->
+
+        <section class="bienvenida seccion">
+
+            <div class="ornamento">
+                ❦
+            </div>
+
+            <p class="subtitulo">
+                UNA NUEVA ETAPA COMIENZA
+            </p>
+
+            <h2>
+                Con mucha alegría...
+            </h2>
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <p class="texto-bienvenida">
+
+                Queremos compartir contigo uno de los momentos
+                más importantes de nuestras vidas.
+
+                <br><br>
+
+                Nos sentimos muy felices de invitarte
+                a celebrar y esperamos contar con tu
+                compañía en este día tan especial.
+
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+     FRASE
+===================================================== -->
+
+        <section class="frase-seccion">
+
+            <div class="frase-contenedor">
+
+                <span class="comillas">“</span>
+
+                <p>
+                    Donde hay amor, hay un hogar.
+                    Y nuestro hogar comienza hoy.
+                </p>
+
+                <span class="comillas derecha">”</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     HISTORIA
+===================================================== -->
+
+        <section class="historia seccion">
+
+            <p class="subtitulo">
+                NUESTROS MOMENTOS
+            </p>
+
+            <h2>
+                Nuestra Historia
+            </h2>
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <p class="texto-historia">
+                Algunos momentos que forman parte de nuestra historia.
+            </p>
+
+            <div class="carrusel">
+
+                <div class="carrusel-ventana">
+
+                    <div class="carrusel-track" id="carruselTrack">
+
+                        <div class="slide">
+
+                            <img src="img/foto1.jpeg" alt="Amanda y Adrián">
+
+                            <div class="frase-foto">
+
+                                <span>✦</span>
+
+                                <p>
+                                    “Y entonces entendimos
+                                    que el amor era esto...”
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="slide">
+
+                            <img src="img/foto2.jpeg" alt="Amanda y Adrián">
+
+                            <div class="frase-foto">
+
+                                <span>✦</span>
+
+                                <p>
+                                    “Contigo, cada momento
+                                    se convierte en un recuerdo.”
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="slide">
+
+                            <img src="img/foto3.jpeg" alt="Amanda y Adrián">
+
+                            <div class="frase-foto">
+
+                                <span>✦</span>
+
+                                <p>
+                                    “De todos mis lugares favoritos,
+                                    tú eres mi hogar.”
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="slide">
+
+                            <img src="img/foto4.jpeg" alt="Amanda y Adrián">
+
+                            <div class="frase-foto">
+
+                                <span>✦</span>
+
+                                <p>
+                                    “Lo mejor de nuestra historia
+                                    apenas está comenzando.”
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="carrusel-btn anterior" id="anterior" aria-label="Foto anterior">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button class="carrusel-btn siguiente" id="siguiente" aria-label="Foto siguiente">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="indicadores" id="indicadores">
+                    <span class="activo"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     PADRES
+===================================================== -->
+
+        <section class="padres seccion">
+
+            <div class="ornamento">
+                ❦
+            </div>
+
+            <p class="subtitulo">
+                CON LA BENDICIÓN DE
+            </p>
+
+            <h2>
+                Nuestros Padres
+            </h2>
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <div class="padres-elegantes">
+
+                <div class="padres-bloque">
+
+                    <span class="padres-corazon">
+                        ♡
+                    </span>
+
+                    <h3>
+                        Padres de la novia
+                    </h3>
+
+                    <div class="linea-dorada"></div>
+
+                    <p>
+                        María del Carmen Martínez Díaz
+                    </p>
+
+                    <p>
+                        Juan Ángel Lazcano Lagunas
+                    </p>
+
+                </div>
+
+
+                <div class="ornamento-centro">
+                    ✦
+                </div>
+
+
+                <div class="padres-bloque">
+
+                    <span class="padres-corazon">
+                        ♡
+                    </span>
+
+                    <h3>
+                        Padres del novio
+                    </h3>
+
+                    <div class="linea-dorada"></div>
+
+                    <p>
+                        Trinidad Rodríguez Acosta
+                    </p>
+
+                    <p>
+                        Salvador Ramos Yepes
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     CUENTA REGRESIVA
+===================================================== -->
+
+        <section class="contador-seccion seccion">
+
+            <div class="contador-decoracion superior">
+                ❦
+            </div>
+
+            <p class="subtitulo claro">
+                CADA VEZ FALTA MENOS
+            </p>
+
+            <h2 class="titulo-blanco">
+                Para nuestro gran día
+            </h2>
+
+            <div class="contador-linea"></div>
+
+            <div class="contador-grid">
+
+                <div class="tiempo">
+
+                    <div class="numero">
+                        <span id="dias">00</span>
+                    </div>
+
+                    <small>DÍAS</small>
+
+                </div>
+
+                <div class="punto">:</div>
+
+                <div class="tiempo">
+
+                    <div class="numero">
+                        <span id="horas">00</span>
+                    </div>
+
+                    <small>HORAS</small>
+
+                </div>
+
+                <div class="punto">:</div>
+
+                <div class="tiempo">
+
+                    <div class="numero">
+                        <span id="minutos">00</span>
+                    </div>
+
+                    <small>MINUTOS</small>
+
+                </div>
+
+                <div class="punto">:</div>
+
+                <div class="tiempo">
+
+                    <div class="numero">
+                        <span id="segundos">00</span>
+                    </div>
+
+                    <small>SEGUNDOS</small>
+
+                </div>
+
+            </div>
+
+            <p class="contador-frase">
+                “El tiempo pasa, pero los recuerdos
+                que crearemos durarán para siempre.”
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+     CEREMONIA
+===================================================== -->
+
+        <section class="evento seccion">
+
+            <p class="subtitulo">
+                EL GRAN MOMENTO
+            </p>
+
+            <h2>
+                Ceremonia Religiosa
+            </h2>
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <div class="evento-elegante">
+
+                <div class="evento-icono">
+                    <i class="fa-solid fa-church"></i>
+                </div>
+
+                <span class="evento-etiqueta">
+                    CEREMONIA
+                </span>
+
+                <h3>
+                    Parroquia de San Luis Obispo de Huexotla
+                </h3>
+
+                <div class="evento-linea"></div>
+
+                <div class="evento-datos">
+
+                    <div>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>28 de noviembre de 2026</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <strong>4:30 PM</strong>
+                    </div>
+
+                </div>
+
+                <a href="https://maps.app.goo.gl/ryPW63v5HtEAk1Ah7" target="_blank" rel="noopener" class="btn btn-vino">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Ver ubicación
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     RECEPCIÓN
+===================================================== -->
+
+        <section class="evento recepcion seccion">
+
+            <p class="subtitulo">
+                DESPUÉS DE LA CEREMONIA
+            </p>
+
+            <h2>
+                Recepción
+            </h2>
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <div class="evento-elegante">
+
+                <div class="evento-icono">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+
+                <span class="evento-etiqueta">
+                    RECEPCIÓN
+                </span>
+
+                <h3>
+                    Finca Las Palmas Texcoco
+                </h3>
+
+                <div class="evento-linea"></div>
+
+                <div class="evento-datos">
+
+                    <div>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>28 de noviembre de 2026</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <strong>6:00 PM</strong>
+                    </div>
+
+                </div>
+
+                <a href="https://maps.app.goo.gl/a8iGALPBpMKs4Mbe7?g_st=iw" target="_blank" rel="noopener"
+                    class="btn btn-vino">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Ver ubicación
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     ITINERARIO
+===================================================== -->
+
+        <section class="itinerario seccion">
+
+            <p class="subtitulo">
+                ACOMPAÑANOS A CELEBRAR
+            </p>
+
+            <h2>
+                Itinerario
+            </h2>
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-hora">
+                        4:30 PM
+                    </div>
+
+                    <div class="timeline-icono">
+                        <i class="fa-solid fa-church"></i>
+                    </div>
+
+                    <div class="timeline-texto">
+
+                        <h3>Ceremonia</h3>
+
+                        <p>
+                            Misa y celebración religiosa
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-hora">
+                        6:00 PM
+                    </div>
+
+                    <div class="timeline-icono">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+
+                    <div class="timeline-texto">
+
+                        <h3>Recepción</h3>
+
+                        <p>
+                            Recibimiento de nuestros invitados
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-hora">
+                        7:00 PM
+                    </div>
+
+                    <div class="timeline-icono">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <div class="timeline-texto">
+
+                        <h3>Cena</h3>
+
+                        <p>
+                            Compartamos juntos este momento
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <div class="timeline-hora">
+                        8:00 PM
+                    </div>
+
+                    <div class="timeline-icono">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+
+                    <div class="timeline-texto">
+
+                        <h3>¡A celebrar!</h3>
+
+                        <p>
+                            Música, baile y mucha diversión
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     VESTIMENTA
+===================================================== -->
+
+        <section class="vestimenta seccion">
+
+            <p class="subtitulo">
+                CÓDIGO DE VESTIMENTA
+            </p>
+
+            <h2>
+                Formal Elegante
+            </h2>
+
+            <div class="separador">
+                <span>♡</span>
+            </div>
+
+            <div class="vestimenta-imagen">
+
+                <div class="vestimenta-marco">
+
+                    <img src="img/vestimenta.jpeg" alt="Vestimenta formal elegante">
+
+                </div>
+
+                <p class="texto-imagen-vestimenta">
+                    Elegancia para celebrar nuestro gran día
+                </p>
+
+            </div>
+
+            <p class="nota-vestimenta">
+                Agradecemos vestir de acuerdo con la ocasión.
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+     MESA DE REGALOS
+===================================================== -->
+
+        <section class="regalos seccion">
+
+            <div class="regalos-contenido">
+
+                <div class="regalo-icono">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+
+                <p class="subtitulo claro">
+                    UN DETALLE DE AMOR
+                </p>
+
+                <h2>
+                    Mesa de Regalos
+                </h2>
+
+                <div class="separador separador-claro">
+                    <span>♡</span>
+                </div>
+
+                <p>
+                    Tu presencia es nuestro mejor regalo.
+                    <br><br>
+                    Si deseas tener un detalle con nosotros,
+                    hemos preparado una mesa de regalos.
+                </p>
+
+                <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/52016616" target="_blank"
+                    rel="noopener" class="btn btn-regalo">
+                    <i class="fa-solid fa-gift"></i>
+                    Liverpool
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     DESPEDIDA
+===================================================== -->
+
+        <section class="despedida">
+
+            <div class="despedida-contenido">
+
+                <div class="mini-adorno">
+                    ❦
+                </div>
+
+                <h2>
+                    ¡Te esperamos!
+                </h2>
+
+                <p>
+                    Gracias por formar parte de nuestra historia
+                    y por acompañarnos a celebrar el comienzo
+                    de nuestra nueva vida juntos.
+                </p>
+
+                <div class="nombres-final">
+
+                    Amanda
+                    <span>&</span>
+                    Adrián
+
+                </div>
+
+                <p class="fecha-final">
+                    28 · 11 · 2026
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
