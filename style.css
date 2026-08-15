@@ -1942,32 +1942,6 @@ a{
 }
 
 
-.timeline::before{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-
-    bottom:0;
-
-    left:50%;
-
-    width:2px;
-
-    background:
-
-        linear-gradient(
-            var(--dorado),
-            transparent
-        );
-
-    transform:translateX(-50%);
-
-}
-
-
 .timeline-item{
 
     position:relative;
