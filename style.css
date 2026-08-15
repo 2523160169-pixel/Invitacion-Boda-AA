@@ -100,7 +100,7 @@ h2{
     line-height:1;
 
     text-shadow:
-        0 2px 12px rgba(100,28,45,.35);
+        0 2px 12px rgba(100,28,45,.16);
 
 }
 
@@ -270,7 +270,7 @@ a{
 
         linear-gradient(
             rgba(61,16,28,.58),
-            rgba(100,28,45,.75)
+            rgba(100,28,45,.80)
         ),
 
         url("img/fondo.jpeg");
