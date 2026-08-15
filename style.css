@@ -664,7 +664,7 @@ a{
 
     font-size:50px;
 
-    letter-spacing:20px;
+    letter-spacing:5px;
 
 }
 
@@ -2375,11 +2375,11 @@ a{
     }
 
     .fecha-portada strong{
-        font-size:16px;
+        font-size:25px;
     }
 
     .fecha-portada small{
-        font-size:20px;
+        font-size:35px;
     }
 
     .frase-portada{
